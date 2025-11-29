@@ -1,0 +1,111 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Quantity</title>
+    <style>
+        .add {
+            background-color: yellow;
+        }
+
+        .buy {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <button title="Good job!" class="red" onclick="alert('Good job!');">
+        hello
+    </button>
+    <button>
+        Click
+    </button>
+    <button>
+        Olaitan
+    </button>
+    <button>
+        Beans
+    </button>
+    <p>
+        Adults Plain Cotton T-Shirt
+    </p>
+    <p>
+        Price: $7.99
+    </p>
+    <button onclick="console.log('Loading...'); alert('Added');" class="add">
+        Add to cart
+    </button>
+    <button onclick= "console.log('Loading...'); alert('Purchased');" class="buy">
+        Buy now
+    </button>
+    <button onclick="console.log(`Cart quantity: ${cartQuantity}`);">
+        Show Quantity</button>
+    <button onclick="cartQuantity++;
+    console.log(`Cart quantity: ${cartQuantity}`);
+    ">
+        Add to Cart</button>
+    <button onclick="cartQuantity += 2;
+    console.log(`Cart quantity: ${cartQuantity}`);
+    ">
+        +2</button>
+    <button onclick="cartQuantity += 3;
+    console.log(`Cart quantity: ${cartQuantity}`);
+    ">
+        +3</button>
+        <button onclick="cartQuantity += 4;
+    console.log(`Cart quantity: ${cartQuantity}`);
+    ">
+        +4</button>
+        <button onclick="cartQuantity += 5;
+    console.log(`Cart quantity: ${cartQuantity}`);
+    ">
+        +5</button>
+        <button onclick="cartQuantity--;
+    console.log(`Cart quantity: ${cartQuantity}`);
+    ">
+        Remove from Cart</button>
+        <button onclick="cartQuantity -= 2;
+    console.log(`Cart quantity: ${cartQuantity}`);
+    ">
+        -2</button>
+        <button onclick="cartQuantity -= 3;
+    console.log(`Cart quantity: ${cartQuantity}`);
+    ">
+        -3</button>
+    <button onclick="cartQuantity = 0;
+    console.log('Cart was reset');
+    console.log(`Cart quantity: ${cartQuantity}`);
+    ">
+        Reset Cart</button>
+    <script>
+        alert('hello');
+        console.log(2 + 5);
+        console.log('some' + 'thing');
+        console.log('Welcome!');
+        let x = 5;
+        console.log(x);
+
+        let cartQuantity = 0;
+
+        let name = 'Darasimi';
+        console.log(`My name is: ${name}`);
+
+        let coffee = 5;
+        let bagels = 3;
+        let soup = 9;
+
+        const cost = coffee + (bagels * 2) + soup;
+        console.log(`Cost of food: $${cost}`);
+        const tax = cost * 0.1;
+        console.log(`Tax (10%): $${tax}`);
+
+        const totalCost = cost + tax;
+        console.log(`Total cost: $${totalCost}`);
+        // The OR operator in js is ||
+        console.log(true || false);
+    </script>
+</body>
+
+</html>
